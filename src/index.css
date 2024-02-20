@@ -81,3 +81,9 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+.challenge {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
