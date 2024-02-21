@@ -2,7 +2,7 @@
   width: 600px;
   background-color: #f7f7f7;
   border-radius: 7px;
-  padding: 25px 100px;
+  padding: 35px 100px;
   background-color: #b1aaaa;
 }
 
@@ -69,13 +69,14 @@ h3 {
 
 .close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 25%;
+  right: 50%;
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 60px;
   color: inherit;
+  transform: translate(50%, 50%);
 }
 
 .close:hover {
