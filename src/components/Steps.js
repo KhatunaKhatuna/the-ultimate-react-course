@@ -8,7 +8,7 @@ const messages = [
 
 export default function Steps() {
   const [step, setStep] = useState(1);
-  const [isOpen, setIsOpen] = useState("true");
+  const [isOpen, setIsOpen] = useState(true);
 
   function hendlePrevious() {
     if (step > 1) {
