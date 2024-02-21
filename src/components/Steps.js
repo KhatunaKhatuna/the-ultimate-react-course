@@ -12,22 +12,25 @@ export default function Steps() {
 
   function hendlePrevious() {
     if (step > 1) {
-      setStep(step - 1);
+      setStep((s) => s - 1);
     }
   }
 
   function hendleNext() {
     if (step < 3) {
-      setStep(step + 1);
+      setStep((s) => s + 1);
     }
   }
   return (
-    <div className="container" style={{ position: "relative" }}>
+    <div className="container">
       <div>
-        <h2 className="challenge" style={{ marginBottom: "100px" }}>
+        <h2 className="challenge" style={{ marginBottom: "70px" }}>
           Challenge 2
         </h2>
-        <button className="close" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="close"
+          onClick={() => setIsOpen((isopen) => !isopen)}
+        >
           &times;
         </button>
         {isOpen && (
