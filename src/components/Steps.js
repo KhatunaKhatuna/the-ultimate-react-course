@@ -48,13 +48,13 @@ export default function Steps() {
                 style={{ backgroundColor: "#7950f2", color: "#fff" }}
                 onClick={hendlePrevious}
               >
-                Prtevious
+                <span>Prtevious</span>
               </button>
               <button
                 style={{ backgroundColor: "#7950f2", color: "#fff" }}
                 onClick={hendleNext}
               >
-                Next
+                <span>Next</span>
               </button>
             </div>
           </div>
