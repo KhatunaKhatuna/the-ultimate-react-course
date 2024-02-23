@@ -19,9 +19,11 @@
 
 .dateCounter-buttons {
   display: inline-block;
-  padding: 10px 50px;
+  padding: 8px 50px;
   border-radius: 7px;
-  background-color: #a58cef;
+  background-color: #7950f2;
+  color: #fff;
+  font-size: 22px;
 }
 
 .dateCounter-data {
