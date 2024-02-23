@@ -64,9 +64,14 @@ function Intro() {
 }
 function SkillList() {
   return (
-    <ul className="skill-list " key={skills.skill}>
+    <ul className="skill-list ">
       {skills.map((skill) => (
-        <Skill skill={skill.skill} color={skill.color} level={skill.level} />
+        <Skill
+          key={skill.skill}
+          skill={skill.skill}
+          color={skill.color}
+          level={skill.level}
+        />
       ))}
     </ul>
   );
@@ -74,7 +79,7 @@ function SkillList() {
 
 function Skill({ skill, level, color }) {
   return (
-    <li className="skill" style={{ backgroundColor: color }}>
+    <li className="skill" style={{ backgroundColor: color }} key={skill}>
       <span>{skill}</span>
       <span>
         {level === "intermediate" && "👍️"}
