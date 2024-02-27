@@ -4,8 +4,8 @@ import "./DateCounter.css";
 export default function DateCounter() {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(1);
-  const increace = () => setStep((step) => step + 1);
-  const decreace = () => setStep((step) => step - 1);
+  const increace = () => setStep((count) => count + 1);
+  const decreace = () => setStep((count) => count - 1);
   const date = new Date();
   date.setDate(date.getDate() + count);
 
