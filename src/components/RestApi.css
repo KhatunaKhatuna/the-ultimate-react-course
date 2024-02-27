@@ -1,0 +1,35 @@
+select {
+  background-color: #cbc4c1;
+  color: #2b211b;
+  font-family: inherit;
+  border: none;
+  border-radius: 8rem;
+
+  padding: 10px 40px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+.select-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+}
+.select-box {
+  appearance: none;
+  text-align: center;
+}
+.custom-arrow {
+  pointer-events: none;
+  display: block;
+  height: 100%;
+  width: 4rem;
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(135deg);
+}
