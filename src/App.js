@@ -3,7 +3,8 @@ import Steps from "./components/Steps";
 import DateCounter from "./components/DateCounter";
 import RestApi from "./components/RestApi";
 import Flashcards from "./components/Flashcards";
-import Test from "./components/Test";
+import TodoList from "./components/toDoList/ToDoList";
+import ToDoDebounced from "./components/toDoDebounced/ToDoDebounced";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <DateCounter />
       <Flashcards />
       <RestApi />
-
-      <Test />
+      <TodoList />
+      <ToDoDebounced />
     </div>
   );
 }

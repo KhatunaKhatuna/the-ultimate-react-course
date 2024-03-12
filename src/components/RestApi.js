@@ -33,8 +33,8 @@ export default function RestApi() {
     requestsetCountries();
   }, []);
 */
-  // Axios
 
+  // Axios
   useEffect(() => {
     const requestsetCountries = async () => {
       const response = await axios.get(
@@ -50,9 +50,6 @@ export default function RestApi() {
   return (
     <div className="container">
       <div>
-        <h2 className="challenge" style={{ marginBottom: "100px" }}>
-          Challenge 4
-        </h2>
         <div className="select-container">
           <select
             className="select-box"
