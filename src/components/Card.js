@@ -30,16 +30,13 @@ const skills = [
 export default function Card() {
   return (
     <div className="container">
-      <div>
-        <h2 className="challenge">Challenge 1</h2>
-        <div className="card">
-          <div className="cardAvatarContainer">
-            <Avatar />
-          </div>
-          <div className="data">
-            <Intro />
-            <SkillList />
-          </div>
+      <div className="card">
+        <div className="cardAvatarContainer">
+          <Avatar />
+        </div>
+        <div className="data">
+          <Intro />
+          <SkillList />
         </div>
       </div>
     </div>

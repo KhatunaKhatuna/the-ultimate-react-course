@@ -24,9 +24,6 @@ export default function Steps() {
   return (
     <div className="container">
       <div>
-        <h2 className="challenge" style={{ marginBottom: "70px" }}>
-          Challenge 2
-        </h2>
         <button
           className="close"
           onClick={() => setIsOpen((isopen) => !isopen)}
