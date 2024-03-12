@@ -5,6 +5,7 @@ import RestApi from "./components/RestApi";
 import Flashcards from "./components/Flashcards";
 import TodoList from "./components/toDoList/ToDoList";
 import ToDoDebounced from "./components/toDoDebounced/ToDoDebounced";
+import DataCounterRange from "./components/DataCounterRange";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Card />
       <Steps />
       <DateCounter />
+      <DataCounterRange />
       <Flashcards />
       <RestApi />
       <TodoList />
