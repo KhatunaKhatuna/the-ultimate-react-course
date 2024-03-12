@@ -58,10 +58,11 @@ export default function DataCounterRange() {
 
           {date.toDateString()}
         </h3>
-
-        <button onClick={handleReset} style={styles.reset}>
-          Reset
-        </button>
+        {(count !== 0 || range !== 1) && (
+          <button onClick={handleReset} style={styles.reset}>
+            Reset
+          </button>
+        )}
       </div>
     </div>
   );
