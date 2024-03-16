@@ -6,6 +6,7 @@ import Flashcards from "./components/Flashcards";
 import TodoList from "./components/toDoList/ToDoList";
 import ToDoDebounced from "./components/toDoDebounced/ToDoDebounced";
 import DataCounterRange from "./components/DataCounterRange";
+import DynamicComponents from "./components/dynamic-components/DynamicComponents";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <RestApi />
       <TodoList />
       <ToDoDebounced />
+      <DynamicComponents type="h1" text="hello from Dynamic Components" />
     </div>
   );
 }
