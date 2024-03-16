@@ -7,6 +7,7 @@ import TodoList from "./components/toDoList/ToDoList";
 import ToDoDebounced from "./components/toDoDebounced/ToDoDebounced";
 import DataCounterRange from "./components/DataCounterRange";
 import DynamicComponents from "./components/dynamic-components/DynamicComponents";
+import RenderProps from "./components/render-props/RenderProps";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <TodoList />
       <ToDoDebounced />
       <DynamicComponents type="h1" text="hello from Dynamic Components" />
+      <RenderProps />
     </div>
   );
 }
