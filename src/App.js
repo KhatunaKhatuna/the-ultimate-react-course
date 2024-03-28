@@ -9,6 +9,7 @@ import DataCounterRange from "./components/DataCounterRange";
 import DynamicComponents from "./components/dynamic-components/DynamicComponents";
 import RenderProps from "./components/render-props/RenderProps";
 import Acordion from "./components/acordion/Acordion";
+import TipCalculator from "./components/TipCalculator";
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
       <DynamicComponents type="h1" text="hello from Dynamic Components" />
       <RenderProps />
       <Acordion />
+      <TipCalculator />
     </div>
   );
 }
