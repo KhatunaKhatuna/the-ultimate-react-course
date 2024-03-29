@@ -35,15 +35,7 @@ const items = [
 ];
 
 export default function Acordion() {
-  const [open, setOpen] = useState(null);
-
-  const handleClick = (id) => {
-    if (open === id) {
-      setOpen(null);
-    } else {
-      setOpen(id);
-    }
-  };
+  const [isOpen, setIsOpen] = useState(null);
 
   return (
     <div className="acordionWrapper">
@@ -53,15 +45,14 @@ export default function Acordion() {
             key={item.id}
             id={item.id < 10 ? "0" + item.id : item.id}
             title={item.title}
-            text={item.text}
             list={item.list.map((listItem) => (
-              <li key={Math.random() * Math.random() * Math.random()}>
-                {listItem}
-              </li>
+              <li key={item.id}>{listItem}</li>
             ))}
-            open={open}
-            handleClick={handleClick}
-          />
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          >
+            {item.text}
+          </AcordionItem>
         ))}
       </div>
     </div>

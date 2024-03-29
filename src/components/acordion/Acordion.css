@@ -101,11 +101,9 @@ h6 {
 }
 .arrow {
   width: 40px;
-  color: green;
+  color: #000;
 }
-.arrow-up {
-  display: none;
-}
+
 .hidden-box {
   font-size: 22px;
   font-weight: normal;
@@ -125,17 +123,13 @@ h6 {
   display: block;
 }
 .open .title,
-.open .number {
+.open .number,
+.open .id,
+.open .arrow {
   color: green;
 }
 .open hr {
   background-color: rgba(5, 136, 5, 0.493);
   height: 5px;
   margin-bottom: 10px;
-}
-.open .arrow-up {
-  display: block;
-}
-.open .arrow-down {
-  display: none;
 }
