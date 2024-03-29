@@ -10,6 +10,8 @@ import DynamicComponents from "./components/dynamic-components/DynamicComponents
 import RenderProps from "./components/render-props/RenderProps";
 import Acordion from "./components/acordion/Acordion";
 import TipCalculator from "./components/TipCalculator";
+import TextExpandeExamples from "./components/TextExpander";
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,7 @@ function App() {
       <RenderProps />
       <Acordion />
       <TipCalculator />
+      <TextExpandeExamples />
     </div>
   );
 }
