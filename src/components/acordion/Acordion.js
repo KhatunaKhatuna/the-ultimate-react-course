@@ -46,7 +46,7 @@ export default function Acordion() {
             id={item.id < 10 ? "0" + item.id : item.id}
             title={item.title}
             list={item.list.map((listItem) => (
-              <li key={item.id}>{listItem}</li>
+              <li key={Math.random()}>{listItem}</li>
             ))}
             isOpen={isOpen}
             setIsOpen={setIsOpen}
